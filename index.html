@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <link rel="stylesheet" href="css/style.css"/>
+</head>
+<script src="js/script.js"></script>
+<body>
+    <header>
+        <nav>
+            <div class="logo"><img src="Logo-RevoU-5.png" width=50px alt="RevoU Logo"></div>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#OurProfile">Our Profile</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#message">Message Us</a></li>
+                </ul>
+            </div>
+    </header>
+    <main>
+        <section class="hero">
+            <h1 id="welcome-text">Hi [name], Welcome To Website</h1>
+            <p>Ini adalah website latihan pertama</p>
+            <div class="banner">[1366x578]</div>
+        </section>
+
+        <section class="headquarters">
+            <h2>Our Headquarter</h2>
+            <div class="locations">
+                <div class="location">
+                    <div class="circle">
+                        <img src="https://tse3.mm.bing.net/th/id/OIP.FNUuRju5SVN2ErO8uiF2OwHaFj?pid=Api&P=0&h=180" alt="Jakarta" width="50px">
+                    </div>
+                    <p class="city-name">Jakarta</p>
+                </div>
+                <div class="location">
+                    <div class="circle">
+                        <img src="https://tse2.mm.bing.net/th/id/OIP.v6ja4OtbfEFPo1x5D-tcgAHaE3?pid=Api&P=0&h=180" alt="Bandung" width="50px">
+                    </div>
+                    <p class="city-name">Bandung</p>
+                </div>
+                <div class="location">
+                    <div class="circle">
+                        <img src="https://tse2.mm.bing.net/th/id/OIP.QioN6nV7I_HiOvJNZShYIwHaFj?pid=Api&P=0&h=180" alt="Surabaya" width="50px">
+                    </div>
+                    <p class="city-name">Surabaya</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="message-us">
+            <h2>Message Us</h2>
+            <div class="form-container">
+                <form id="message-form">
+                <div class="form-row">
+                    <label for="name">Nama</label>
+                    <input type="text" id="name" name="name" placeholder="Nama" required />
+                </div>
+                <div class="form-row">
+                    <label for="birthdate">Tanggal Lahir</label>
+                    <input type="date" id="birthdate" name="birthdate" required />
+                </div>
+                <div class="form-row">
+                    <label>Jenis Kelamin</label>
+                    <div class="gender-options">
+                    <label><input type="radio" name="gender" value="Laki - Laki" required /> Laki-Laki</label>
+                    <label><input type="radio" name="gender" value="Perempuan" /> Perempuan</label>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <label for="message-text">Pesan</label>
+                    <textarea id="message-text" name="message-text" rows="4" placeholder="Pesan"></textarea>
+                </div>
+                <button type="submit">Submit</button>
+                </form>
+
+                <div id="result-box" class="result-box"></div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p> Created by RevoU</p>
+    </footer>
+</body>
+</html>
