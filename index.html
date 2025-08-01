@@ -3,85 +3,147 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Website</title>
-    <link rel="stylesheet" href="css/style.css"/>
+    <title>RevoU - Digital Learning Platform</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
-<script src="js/script.js"></script>
+
 <body>
     <header>
         <nav>
-            <div class="logo"><img src="Logo-RevoU-5.png" width=50px alt="RevoU Logo"></div>
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#OurProfile">Our Profile</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#message">Message Us</a></li>
-                </ul>
+            <div class="logo">
+                <div class="logo-icon"><img src="Logo-RevoU-5.png" width=50px alt="RevoU Logo"></div>
+                
             </div>
+            <ul id="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#features">Portfolio</a></li>
+                <li><a href="#headquarters">Our Profile</a></li>
+                <li><a href="#message-us">Contact</a></li>
+            </ul>
+            <button class="mobile-menu" id="mobile-menu-btn">☰</button>
+        </nav>
     </header>
+
     <main>
-        <section class="hero">
-            <h1 id="welcome-text">Hi [name], Welcome To Website</h1>
-            <p>Ini adalah website latihan pertama</p>
-            <div class="banner">[1366x578]</div>
+        <section id="home" class="hero">
+            <h1 id="welcome-text">Hi there, Welcome To RevoU</h1>
+            <p>Transform your career with our comprehensive digital learning platform</p>
+            <a href="#features" class="cta-button">Explore Features</a>
         </section>
 
-        <section class="headquarters">
-            <h2>Our Headquarter</h2>
-            <div class="locations">
-                <div class="location">
-                    <div class="circle">
-                        <img src="https://tse3.mm.bing.net/th/id/OIP.FNUuRju5SVN2ErO8uiF2OwHaFj?pid=Api&P=0&h=180" alt="Jakarta" width="50px">
+        <section id="features" class="features">
+            <div class="container">
+                <h2 class="section-title">Why Choose RevoU?</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">🎓</div>
+                        <h3>Expert Tutors</h3>
+                        <p>Learn from industry professionals with years of experience in their respective fields.</p>
                     </div>
-                    <p class="city-name">Jakarta</p>
+                    <div class="feature-card">
+                        <div class="feature-icon">🚀</div>
+                        <h3>Career Focused</h3>
+                        <p>Our curriculum is designed to prepare you for real-world challenges and career advancement.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">💻</div>
+                        <h3>Interactive Learning</h3>
+                        <p>Engage with hands-on projects and interactive content that makes learning enjoyable.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🤝</div>
+                        <h3>Community Support</h3>
+                        <p>Join a vibrant community of learners and get support throughout your learning journey.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">📱</div>
+                        <h3>Mobile Friendly</h3>
+                        <p>Access your courses anytime, anywhere with our mobile-optimized platform.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🏆</div>
+                        <h3>Certificates</h3>
+                        <p>Earn recognized certificates upon completion to showcase your new skills to employers.</p>
+                    </div>
                 </div>
-                <div class="location">
-                    <div class="circle">
-                        <img src="https://tse2.mm.bing.net/th/id/OIP.v6ja4OtbfEFPo1x5D-tcgAHaE3?pid=Api&P=0&h=180" alt="Bandung" width="50px">
+            </div>
+        </section>
+
+        <section id="headquarters" class="headquarters">
+            <div class="container">
+                <h2 class="section-title">Our Locations</h2>
+                <div class="locations">
+                    <div class="location">
+                        <div class="circle">
+                            <img src="https://tse3.mm.bing.net/th/id/OIP.FNUuRju5SVN2ErO8uiF2OwHaFj?pid=Api&P=0&h=180" alt="Jakarta" width="50px">
+                        </div>
+                        <p class="city-name">Jakarta</p>
                     </div>
-                    <p class="city-name">Bandung</p>
-                </div>
-                <div class="location">
-                    <div class="circle">
-                        <img src="https://tse2.mm.bing.net/th/id/OIP.QioN6nV7I_HiOvJNZShYIwHaFj?pid=Api&P=0&h=180" alt="Surabaya" width="50px">
+                    <div class="location">
+                        <div class="circle">
+                            <img src="https://tse2.mm.bing.net/th/id/OIP.v6ja4OtbfEFPo1x5D-tcgAHaE3?pid=Api&P=0&h=180" alt="Bandung" width="50px">
+                        </div>
+                        <p class="city-name">Bandung</p>
                     </div>
-                    <p class="city-name">Surabaya</p>
+                    <div class="location">
+                        <div class="circle">
+                            <img src="https://tse2.mm.bing.net/th/id/OIP.QioN6nV7I_HiOvJNZShYIwHaFj?pid=Api&P=0&h=180" alt="Surabaya" width="50px">
+                        </div>
+                        <p class="city-name">Surabaya</p>
+                    </div>
                 </div>
             </div>
         </section>
 
         <section id="message-us">
-            <h2>Message Us</h2>
-            <div class="form-container">
-                <form id="message-form">
-                <div class="form-row">
-                    <label for="name">Nama</label>
-                    <input type="text" id="name" name="name" placeholder="Nama" required />
-                </div>
-                <div class="form-row">
-                    <label for="birthdate">Tanggal Lahir</label>
-                    <input type="date" id="birthdate" name="birthdate" required />
-                </div>
-                <div class="form-row">
-                    <label>Jenis Kelamin</label>
-                    <div class="gender-options">
-                    <label><input type="radio" name="gender" value="Laki - Laki" required /> Laki-Laki</label>
-                    <label><input type="radio" name="gender" value="Perempuan" /> Perempuan</label>
+            <div class="container">
+                <h2 class="section-title">Get In Touch</h2>
+                <div class="form-container">
+                    <div class="form-section">
+                        <h3>Send us a message</h3>
+                        <form id="message-form">
+                            <div class="form-row">
+                                <label for="name">Full Name</label>
+                                <input type="text" id="name" name="name" placeholder="Enter your full name" required />
+                            </div>
+                            <div class="form-row">
+                                <label for="birthdate">Date of Birth</label>
+                                <input type="date" id="birthdate" name="birthdate" required />
+                            </div>
+                            <div class="form-row">
+                                <label>Gender</label>
+                                <div class="gender-options">
+                                    <label><input type="radio" name="gender" value="Male" required /> Male</label>
+                                    <label><input type="radio" name="gender" value="Female" /> Female</label>
+                                </div>
+                            </div>
+                            
+                            <div class="form-row">
+                                <label for="message-text">Message</label>
+                                <textarea id="message-text" name="message-text" rows="4" placeholder="Tell us about your goals and how we can help you..."></textarea>
+                            </div>
+                            <button type="submit">Send Message</button>
+                        </form>
+                    </div>
+
+                    <div class="form-section">
+                        <h3>Your Message Preview</h3>
+                        <div id="result-box" class="result-box">
+                            <p class="placeholder-text">Your message details will appear here after submission</p>
+                        </div>
                     </div>
                 </div>
-                <div class="form-row">
-                    <label for="message-text">Pesan</label>
-                    <textarea id="message-text" name="message-text" rows="4" placeholder="Pesan"></textarea>
-                </div>
-                <button type="submit">Submit</button>
-                </form>
-
-                <div id="result-box" class="result-box"></div>
             </div>
         </section>
     </main>
+
     <footer>
-        <p> Created by RevoU</p>
+        <div class="container">
+            <p>&copy; 2025 RevoU - Digital Learning Platform. All rights reserved.</p>
+            <p>Empowering careers through education</p>
+        </div>
     </footer>
+
+    <script src="js/script.js"></script>
 </body>
 </html>
